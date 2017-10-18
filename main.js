@@ -50,6 +50,13 @@ function calcPrimes(n) {
                 output.push(i);
                 currentSum += i;
                 sum.push(currentSum);
+                // following code breaks the page page :S
+                // chart.load({
+                //     columns: [
+                //         sum,
+                //         output
+                //     ]
+                // });
             }
     }
 
@@ -88,6 +95,5 @@ function updateWithInterval (){
                 newOutput
             ]
         });
-
     },100)
 }
