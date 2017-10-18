@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.18/c3.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.18/c3.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Calc Primes</title>
+</head>
+<body>
+<style>
+    body {
+        background-color: #f0f2f1;
+    }
+    .chart-container {
+        width: 50vw;
+        margin: 50px auto;
+        border-radius: 4px;
+        background-color: #fff;
+        padding: 16px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+
+    }
+    #chart{
+        padding-bottom: 50px;
+    }
+    .button{
+        padding: 8px 16px;
+        font-family: Verdana;
+        background-color: white;
+        border: 2px solid #1C1C1C;
+        min-width:300px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="chart-container">
+    <div id="chart"></div>
+    <button class="button" onclick="calcPrimes(10000)">show chart</button>
+    <button class="button" onclick="updateWithInterval()">show chart(updated in interval)</button>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
